@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART-Goal Sign-Up</title>
+
+    <link rel="stylesheet" href="Styles/style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h1> <a href="index.html"> <span style="color: wheat"> SMART-Goal </span> <img src="images/logo.png" height="40"></a></h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myGoals.html">My Goals</a></li>              
+            <li><a href="createGoal.html">Create Goal</a></li>
+            <li><a href="signIn.html">Sign-In</a></li>
+            <li><a href="signUp.html">Sign-Up</a></li>  
+        </ul>
+    </div>    
+    <div class="signup_page">
+        <form class="signup_form">
+            <div class="form-header">
+                <h1>Create a target</h1>
+            </div>
+            <!-- FORM BODY -->
+            <div class="form-body">
+                <div class="row">
+                    <div class="input-group">
+                        <label>Name of the target</label>
+                        <input type="text" placholder="Name of the target">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Short description of the target</label>
+                        <textarea> </textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>How do you want the target to be measured?</label>
+                    </div>
+                </div>
+                 
+
+                <select id="measure">
+                    <option value="numeric">Numeric</option>
+                    <option value="checkbox">Checkbox</option>
+                    <option value="scale">Scale</option>
+                    <option value="text" selected>Description</option>
+                </select>
+                
+            </div>
+            <!--  FORM FOOTER   -->
+            <div class="form-footer">
+                <button class="form_button">Create</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <div class="footer">
+        <p>&copy; 2023 Smart-Goal (Not a real company)</p>
+    </div>     
+</body>
+</html>

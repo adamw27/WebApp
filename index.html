@@ -4,140 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goals App</title>
-    <link rel="stylesheet" href="Styles/general.css">
-    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    
+    <title>Smart-Goal Home</title>
 </head>
+
 <body>
-    <div class="navbar">
-        <a href="index.html">My goals</a>
-        <a href="#login-form">Log in</a>
-        <a href="#register-form">Create new account</a>
+    <div class="header">
+        <h1> <a href="index.html"> <span style="color: wheat"> SMART-Goal </span> <img src="images/logo.png" height="40"></a></h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myGoals.html">My Goals</a></li>              
+            <li><a href="createGoal.html">Create Goal</a></li>
+            <li><a href="signIn.html">Sign-In</a></li>
+            <li><a href="signUp.html">Sign-Up</a></li>  
+        </ul>
     </div>
-    <div class="overlay" id="login-form">
-        <div class="form-wrapper">
-            <h3>Please input the details</h3>
-            <a href="#" class="close">&times;</a>
-            <form>
-                <label>USERNAME</label>
-                <input type="text" placeholder="Username">
-                <label>PASSWORD</label>                    
-                <input type="password" placeholder="Password">
-                <div class="form-submit-button">
-                    <input type="submit" value="LOG IN"> 
-                </div>
-            </form>
+
+    <div class="home_welcome">
+        <div class="home_welcome_inner">
+          <h1>Welcome To SMART-Goal!</h1>
+           <h3> Do you need help in setting goals to achieve your targets? SMART-Goal is the place for you!</h3>
+           <p>
+                SMART-Goal assists you in setting up your goals using the acclaimed SMART framework. 
+                You can specify each goal by writing the name of the goal, the description of the goal (according to the SMART format), and the due date.<br>
+                Once a goal is created, you can view it along with all your other previous goals in your own Goal-list! Furthermore, once you have set a specific goal, you can break it down into achievable targets.<br>
+                If this sounds like something for you, all you have to do is create an account and sign-in!
+                <h3>Good luck!</h3>
+            </p>
+          <a href="#learn_smart" class="button">Learn More About SMART</a>
         </div>
     </div>
-    <div class="overlay" id="register-form">
-        <div class="form-wrapper">
-            <h3>Please input the details</h3>
-            <a href="#" class="close">&times;</a>
-            <form>
-                <label>USERNAME</label>
-                <input type="text" placeholder="Username">
-                <label>PASSWORD</label>                    
-                <input type="password" placeholder="Password">
-                <label>FIRST NAME</label>                    
-                <input type="text" placeholder="First name">
-                <label>LAST NAME</label>                    
-                <input type="text" placeholder="Last name">
-                <label>ADDRESS</label>                    
-                <input type="text" placeholder="Address">
-                <label>COUNTRY</label>                    
-                <input type="text" placeholder="Country">
-                <label>ZIP CODE</label>                    
-                <input type="text" placeholder="ZIP Code">
-                <label>EMAIL</label>                    
-                <input type="text" placeholder="Email">
-                <label>SEX</label>                    
-                <input type="text" placeholder="Sex">
-                <label>LANGUAGE</label>                    
-                <input type="text" placeholder="Language">
-                <label>ABOUT</label>                    
-                <input type="text" placeholder="About">
-                <div class="form-submit-button">
-                    <input type="submit" value="CREATE AN ACCOUNT"> 
-                </div>
-            </form>
+    <div id="learn_smart">
+      <div class="row">
+        <div class="side1">
+          <h2>What is SMART?</h2>
+          <div>
+            <img class="image_bg" style="height:300px;" src="images/SMART-goals.png" alt="">
+          </div>
+
+          <p>S.M.A.R.T. is a mnemonic acronym, giving criteria to guide in the setting of goals and objectives that are assumed to give better results, 
+              for example in project management, employee-performance management and personal development. 
+              The term was first proposed by George T. Doran in the November 1981 issue of Management Review.
+              He suggested that goals should be SMART (specific, measurable, assignable, realistic and time-related). <br><br>
+
+              Since then, other variations of the acronym have been used, a commonly used version includes the alternative words: attainable, relevant, and timely. 
+              Additional letters have been added by some authors.
+          </p>
+
+          
+          <h3>Usefulness</h3>
+          <div>
+            <img class="image_bg" style="height:300px;" src="images/setting_goals.jpg">
+          </div>
+
+          <p>
+            Those who support the use of SMART objectives suggest they provide a clear road map for both the person setting the goal and the person evaluating their progress (e.g. employee and employer, or athlete and coach). 
+            The person setting the goal is said to gain a clear understanding of what needs to be delivered and the person evaluating can then assess the outcome based on defined criteria. 
+            SMART criteria are commonly associated with Peter Drucker's management by objectives concept.
+         </p>
         </div>
-    </div>
-    <table class="table">
-        <thead class="table-head">
-            <th class="table-name">Name</th>
-            <th class="table-description">Description</th> 
-            <th class="table-date">Due date</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td><a href="#edit-goal-form-1">Healthy Lifestyle</a></td>
-                <td>Workout everyday for an hour</td>
-                <td>30.02.2023</td>
-            </tr>
-            <tr>
-                <td><a href="#edit-goal-form-2">Reading</a></td>
-                <td>Read half an hour a day</td>
-                <td>30.02.2023</td>
-            </tr>
-            <tr>
-                <td><a href="#add-goal-form">+ add a new goal</a></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="overlay" id="edit-goal-form-1">
-        <div class="form-wrapper">
-            <h3>Goal progress</h3>
-            <h3>NAME</h3>
-            <p>Healthy Lifestyle</p>
-            <h3>DESCRIPTION</h3>
-            <p>Workout everyday for an hour</p>
-            <h3>Due date</h3>
-            <p>30.02.2023</p>
-            <a href="#" class="close">&times;</a>
-            <h3>PROGRESS</h3>
-            Today's workout done
-            <input type="checkbox">
-            <div class="form-submit-button">
-                <input type="submit" value="SAVE"> 
-            </div>
+
+        <div class="side2">
+          <h2>The steps to SMART</h2>
+          <p>A SMART goal is used to help guide goal setting. SMART is an acronym that stands for Specific, Measurable, Achievable, Realistic, and Timely. 
+            Therefore, a SMART goal incorporates all of these criteria to help focus your efforts and increase the chances of achieving your goal. SMART-goals
+            are defined as followed:</p>
+
+            <img class="image_bg" style="height:100px;" src="images/definition_s.jpg"><br>
+            <p><b>S</b>pecific: Well defined, clear, and unambiguous</p>
+            <img class="image_bg" style="height:100px;" src="images/definition_m.jpg"><br>
+            <p><b>M</b>easurable: With specific criteria that measure your progress toward the accomplishment of the goal</p>
+            <img class="image_bg" style="height:100px;" src="images/definition_a.jpg"><br>
+            <p><b>A</b>chievable: Attainable and not impossible to achieve</p>
+            <img class="image_bg" style="height:100px;" src="images/definition_r.jpg"><br>
+            <p><b>R</b>ealistic: Within reach, realistic, and relevant to your life purpose</p>
+            <img class="image_bg" style="height:100px;" src="images/definition_t.jpg"><br>
+            <p><b>T</b>imely: With a clearly defined timeline, including a starting date and a target date. The purpose is to create urgency</p>
+        
+            <a href="https://corporatefinanceinstitute.com/resources/management/smart-goal/" class="button">Learn Even More About SMART</a>
         </div>
-    </div>
-    <div class="overlay" id="edit-goal-form-2">
-        <div class="form-wrapper">
-            <h3>Goal progress</h3>
-            <h3>NAME</h3>
-            <p>Reading</p>
-            <h3>DESCRIPTION</h3>
-            <p>Read half an hour a day</p>
-            <h3>Due date</h3>
-            <p>30.02.2023</p>
-            <a href="#" class="close">&times;</a>
-            <h3>PROGRESS</h3>
-            Today's reading done
-            <input type="checkbox">
-            <div class="form-submit-button">
-                <input type="submit" value="SAVE"> 
-            </div>
-        </div>
-    </div>
-    <div class="overlay" id="add-goal-form">
-        <div class="form-wrapper">
-            <h3>Please input the details</h3>
-            <a href="#" class="close">&times;</a>
-            <form>
-                <label>NAME</label>
-                <input type="text" placeholder="Name">
-                <label>DESCRIPTION</label>                    
-                <input type="text" placeholder="Description">
-                <label>DUE DATE</label>                    
-                <input type="date">
-                <div class="form-submit-button">
-                    <input type="submit" value="ADD A NEW GOAL"> 
-                </div>
-            </form>
-        </div>
-    </div>
+      </div>
+      
+      <div class="footer">
+        <p>&copy; 2023 Smart-Goal (Not a real company)</p>
+      </div> 
+    </div> 
 </body>
 </html>
